@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" href="style/style.css" />
+  <title>questionnaire_test</title>
+</head>
+
+<body>
+  <!-- начал 28.06.21 в 11:30 -->
+  <div class="container">
+    <div class="main__menu">
+      <nav class="menu">
+        <a href="#about_personinfo" class="menu__link menu__link_active" rel="m_PageScroll2id">Личная информация</a>
+        <a href="#experiance" class="menu__link" rel="m_PageScroll2id">Опыт</a>
+        <a href="#js" class="menu__link" rel="m_PageScroll2id">JavaScript</a>
+        <a href="#about" class="menu__link" rel="m_PageScroll2id">О себе</a>
+      </nav>
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box">
+          <li>
+            <a class="menu__link menu__link_active" href="#about_personinfo" rel="m_PageScroll2id">Личная информация</a>
+          </li>
+          <li>
+            <a class="menu__link" href="#experiance" rel="m_PageScroll2id">Опыт</a>
+          </li>
+          <li>
+            <a class="menu__link" href="#js" rel="m_PageScroll2id">JavaScript</a>
+          </li>
+          <li>
+            <a class="menu__link" href="#about" rel="m_PageScroll2id">О себе</a>
+          </li>
+        </ul>
+      </div>
+      <hr class="menu__line" />
+    </div>
+    <div class="about_personinfo" id="about_personinfo">
+      <div class="header">
+        <div class="title">Анкета</div>
+        <div class="logo">
+          <img src="img/icon.png" alt="" />
+        </div>
+        <div class="subtitle">Личная информация</div>
+      </div>
+      <div class="personinfo__info">
+        <div class="info__date">Шахов Иван Павлович</div>
+        <div class="info__date date">
+          <input type="text" class="info__date date" id="datepicker" />
+        </div>
+        <div class="info__date">г. Павлодар</div>
+        <div class="info__date">live:.cid.313e9171ef7cbd68</div>
+        <div class="info__date">
+          <a href="mailto:vanyashakovv@gmail.com">vanyashakhovv@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="experiance" id="experiance">
+      <div class="header">
+        <div class="experiance_logo">
+          <img src="img/Shape_7.png" alt="" />
+        </div>
+        <div class="subtitle">Расскажите о своем опыте</div>
+      </div>
+      <div class="experiance__item">
+        <div class="item__column">
+          <div class="column__checkbox">
+            <input type="checkbox" name="optinon1" class="checkbox" value="a1" checked="checked" />
+            <span class="chekbox__text">БЭМ/OOOCSS</span>
+          </div>
+          <div class="column__checkbox">
+            <input type="checkbox" name="optinon2" class="checkbox" value="a2" />
+            <span class="chekbox__text">Stylus/LESS/SASS</span>
+          </div>
+          <div class="column__checkbox">
+            <input type="checkbox" name="optinon3" class="checkbox" value="a3" checked="checked" />
+            <span class="chekbox__text">Работаю с SVG</span>
+          </div>
+        </div>
+        <div class="item__column">
+          <div class="column__checkbox">
+            <input type="checkbox" name="optinon4" class="checkbox" value="a4" checked="checked" />
+            <span class="chekbox__text">Верстаю семантично</span>
+          </div>
+          <div class="column__checkbox">
+            <input type="checkbox" name="optinon5" class="checkbox" value="a5" />
+            <span class="chekbox__text">ES2015/ES2016</span>
+          </div>
+          <div class="column__checkbox">
+            <input type="checkbox" name="optinon6" class="checkbox" value="a6" />
+            <span class="chekbox__text">Gulp/GRUNT</span>
+          </div>
+        </div>
+        <div class="item__column">
+          <div class="column__checkbox">
+            <input type="checkbox" name="optinon7" class="checkbox" value="a7" />
+            <span class="chekbox__text">Webpack</span>
+          </div>
+          <div class="column__checkbox">
+            <input type="checkbox" name="optinon8" class="checkbox" value="a8" checked="checked" />
+            <span class="chekbox__text">jQuery</span>
+          </div>
+          <div class="column__checkbox">
+            <input type="checkbox" name="optinon9" class="checkbox" value="a9" checked="checked" />
+            <span class="chekbox__text">Использую Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- закончил 29.06.21 в 18:00 -->
+    <!-- начал 30.06.21 в 12:00 -->
+    <div class="js" id="js">
+      <div class="header">
+        <div class="logo__js">
+          <img src="img/icon_js.png" alt="" />
+        </div>
+        <div class="subtitle">Уровень владения JavaScript</div>
+      </div>
+      <div class="slider__text">
+        <div class="slider__text1">Не владею</div>
+        <div class="slider__text2">Использую готовые решения</div>
+        <div class="slider__text3">
+          Использую готовые решения и умею переделывать
+        </div>
+        <div class="slider__text4">Пишу сложный JS с нуля</div>
+      </div>
+      <div class="slidecontainer">
+        <img src="img/Layer_2_copy_3.png" alt="" />
+        <div class="mask"></div>
+        <input type="range" min="1" max="100" value="50" class="slider" step="1" id="myRange" />
+      </div>
+    </div>
+    <div class="about" id="about">
+      <div class="header">
+        <div class="logo__about">
+          <img src="img/icon_about.png" alt="" />
+        </div>
+        <div class="subtitle">Расскажите о себе</div>
+        <div class="subtitle__text">
+          Напишите несколько предложений, чем привлекла наша вакансия и что вы
+          ожидаете от работы у нас.
+        </div>
+      </div>
+      <div class="about__text">
+        Понравилась тем, что я могу прокачать свои навыки в
+        web-программировании, узнать какого это работать в команде, удаленная
+        работа, также шанс приобрести новые знания и при этом заработать.
+      </div>
+      <button class="about_btn">Готово</button>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/datapicker.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/PageScroll2id.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+<!-- закончил 2.07.21 в 16:00 
+      затруднения вызывл адаптив и стилизация ползунка range-->
