@@ -1,0 +1,408 @@
+@import 'nullstyle.css';
+
+html {
+  height: 100%;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  min-width: 810px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 2234px;
+  margin: 0px auto;
+}
+
+.main__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  min-height: 80px;
+  width: 100%;
+  background: white;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  min-width: 501px;
+  height: 14px;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #4f6fa4;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.menu__line {
+  width: 100%;
+  position: absolute;
+  margin: 79px 0px 0px 0px;
+  color: #d9d9d9;
+  background-color: #d9d9d9;
+  height: 1px;
+  border: none;
+}
+
+.menu__link_active {
+  color: #565656;
+}
+
+.about_personinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  margin: 210px 0px 0px 0px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  width: 213px;
+  height: 51px;
+  color: #1c1c1c;
+  font-size: 70px;
+  font-weight: 400;
+}
+
+.logo {
+  margin: 85px 0px 0px 0px;
+}
+
+.subtitle {
+  width: 402px;
+  height: 30px;
+  text-align: center;
+  color: #1c1c1c;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 0px 0px 0px;
+}
+
+.personinfo__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  width: 520px;
+  height: 400px;
+  margin: 48px 0px 0px 0px;
+}
+
+#datepicker {
+  text-align: center;
+  border: none;
+  width: 280px;
+  height: 50px;
+  outline: none;
+}
+
+.ui-datepicker-trigger {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.info__date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 520px;
+  height: 60px;
+  font-size: 24px;
+  color: #c8c8c8;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.date {
+  width: 320px;
+  height: 60px;
+}
+
+.experiance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 75px 0px 0px 0px;
+}
+
+.experiance__item {
+  display: flex;
+  justify-content: space-between;
+  width: 695px;
+  margin: 49px 0px 0px 0px;
+  line-height: 34.98px;
+}
+
+.chekbox__text {
+  font-weight: bold;
+  margin: 0px 0px 0px 12px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.js {
+  margin: 134px 0px 0px;
+  width: 770px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 770px;
+  height: 15px;
+  background: linear-gradient(
+    to right,
+    #d7b3f4,
+    #8b87c6 50%,
+    transparent 50%,
+    #e8e8e8 50%
+  );
+}
+
+input[type='range']:focus {
+  outline: none;
+}
+
+.mask {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 17px;
+  background: white;
+  -webkit-clip-path: polygon(100% 0, 0 0%, 0% 89%);
+  clip-path: polygon(100% 0, 0 0%, 0% 89%);
+  outline: none;
+}
+
+.slidecontainer {
+  position: relative;
+  height: 15px;
+  width: 770px;
+}
+
+.slidecontainer img {
+  margin-left: 2px;
+  margin-bottom: -8px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  position: relative;
+  top: 24px;
+  left: 5px;
+  z-index: 2;
+  width: 25px;
+  height: 28px;
+  background: url('/img/Rounded_Rectangle_4.png');
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  position: relative;
+  top: 24px;
+  left: 5px;
+  z-index: 2;
+  width: 25px;
+  height: 28px;
+  background: url('/img/Rounded_Rectangle_4.png');
+  cursor: pointer;
+}
+
+.slider__text {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 47px 0px -5px 0px;
+  align-items: flex-end;
+  font-size: 13px;
+}
+
+.slider__text1 {
+  width: 66px;
+  height: 18px;
+  font-weight: bold;
+}
+
+.slider__text2 {
+  margin-left: 59px;
+  font-weight: bold;
+  width: 121px;
+  height: 32px;
+}
+
+.slider__text3 {
+  margin-left: 15px;
+  font-weight: bold;
+  width: 177px;
+  height: 32px;
+}
+
+.slider__text4 {
+  width: 151px;
+  font-weight: bold;
+  height: 18px;
+  text-align: right;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 102px 0px 0px 0px;
+}
+
+.subtitle__text {
+  text-align: center;
+  width: 495px;
+  font-weight: bold;
+  height: 40px;
+  margin: 23px 0px 0px 0px;
+}
+
+.about__text {
+  width: 479px;
+  height: 131px;
+  font-size: 20px;
+  color: #c8c8c8;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 25px 21px 21px 21px;
+  margin-top: 39px;
+}
+
+.about_btn {
+  width: 116px;
+  height: 51px;
+  background-color: #435993;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-top: 69px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .hamburger-menu {
+    display: inline;
+  }
+
+  #menu__toggle {
+    opacity: 0;
+  }
+
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: white;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu__link {
+    display: block;
+    padding: 12px 24px;
+    color: #4f6fa4;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .menu__link:hover {
+    background-color: #cfd8dc;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    transition-duration: 0.25s;
+  }
+
+  .menu__box {
+    transition-duration: 0.25s;
+  }
+
+  .menu__link {
+    transition-duration: 0.25s;
+  }
+}
